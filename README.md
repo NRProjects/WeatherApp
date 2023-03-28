@@ -6,7 +6,7 @@ To search for the weather conditions of a location, enter the location name in t
 
 # Preview
 <p align="center">
-  <img src="https://github.com/NRProjects/WeatherApp/blob/master/weatherappimage.png" alt="Weather App Preview">
+  <img src="resources\static\preview.png" alt="Weather App Preview">
 </p>
 
 # Credits
