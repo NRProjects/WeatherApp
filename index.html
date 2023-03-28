@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer type="module" src="/main.js"></script>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="center">
+      <div class="container">
+        <div class="search">
+          <form id="search-form">
+            <input id="search" type="text" placeholder="ENTER LOCATION">
+            <input type="submit">
+          </form>
+        </div>
+        <div class="weather-graphic">
+          <image id="weather-graphic"></image>
+        </div>
+        <div class="temperature">
+          <p>0<sup>&deg;F</sup></p>
+        </div>
+        <div class="humidity">
+          <image src="resources/static/droplet-solid.svg"></image>
+          <p id="humidity">0%</p>
+          <p class="humidity-label">Humidity</p>
+        </div>
+        <div class="wind">
+          <image src="resources/static/wind-solid.svg"></image>
+          <p id="wind">0 mp/h</p>
+          <p class="wind-label">Wind Speed</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
