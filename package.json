@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "jquery": "^3.6.4",
+    "ress": "^5.0.2",
     "toastify-js": "^1.12.0"
   }
 }

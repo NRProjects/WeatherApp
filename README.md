@@ -6,10 +6,12 @@ To search for the weather conditions of a location, enter the location name in t
 
 # Preview
 <p align="center">
-  <img src="https://github.com/NRProjects/WeatherApp/blob/master/weatherappimage.png" alt="Weather App Preview">
+  <img src="resources\static\preview.png" alt="Weather App Preview">
 </p>
 
 # Credits
 The weather data is provided by the [OpenWeatherMap API](https://openweathermap.org/api).
 
 The weather graphics are provided by [Font Awesome](https://fontawesome.com/) and [Amcharts](https://www.amcharts.com/free-animated-svg-weather-icons/).
+
+The loading wheel was generated on [Loading.io](https://loading.io/).
