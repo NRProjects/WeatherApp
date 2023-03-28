@@ -13,3 +13,5 @@ To search for the weather conditions of a location, enter the location name in t
 The weather data is provided by the [OpenWeatherMap API](https://openweathermap.org/api).
 
 The weather graphics are provided by [Font Awesome](https://fontawesome.com/) and [Amcharts](https://www.amcharts.com/free-animated-svg-weather-icons/).
+
+The loading wheel was generated on [Loading.io](https://loading.io/).
