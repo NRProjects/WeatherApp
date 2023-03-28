@@ -21,47 +21,15 @@ form.on("submit", (e) => {
 
     $.ajax({
         url: `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=imperial`,
-        // data: {
-        //     q: city,
-        //     appid: API_KEY
-        // },
         method: "GET",
         dataType: "json",
         success: (data) => {            
             temperature.html(Math.round(data.main.temp) + '<sup>&deg;F</sup>');
+            const weatherIcon = getWeatherIcon(data.weather[0].main);
+            weatherBox.attr('src', `resources/animated/${weatherIcon}`);
             humidity.html(data.main.humidity + '%');
             wind.html(data.wind.speed + ' mp/h');
             console.log(data);
-
-            switch(data.weather[0].main) {
-                case "Clear":
-                    weatherBox.attr('src', 'resources/animated/day.svg');
-                    break;
-
-                case "Clouds":
-                    weatherBox.attr('src', 'resources/animated/cloudy.svg');
-                    break;
-
-                case "Thunderstorm":
-                    weatherBox.attr('src', 'resources/animated/thunder.svg');
-                    break;
-
-                case "Drizzle":
-                    weatherBox.attr('src', 'resources/animated/rainy-1.svg');
-                    break;
-
-                case "Rain":
-                    weatherBox.attr('src', 'resources/animated/rainy-7.svg');
-                    break;
-
-                case "Snow":
-                    weatherBox.attr('src', 'resources/animated/snowy-6.svg');
-                    break;
-
-                default:
-                    weatherBox.attr('src', 'resources/animated/weather.svg');
-                    break;
-            }
         },
         error: (error) => {
             Toastify({
@@ -76,5 +44,17 @@ form.on("submit", (e) => {
         }
     });
 })
+
+function getWeatherIcon(weatherCondition) {
+    const weatherIconMap = {
+        "Clear": "day.svg",
+        "Clouds": "cloudy.svg",
+        "Thunderstorm": "thunder.svg",
+        "Drizzle": "rainy-1.svg",
+        "Rain": "rainy-7.svg",
+        "Snow": "snowy-6.svg"
+    };
+    return weatherIconMap[weatherCondition] || "weather.svg";
+}
 
 // https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
