@@ -2,42 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/resources/static/favicon.svg" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer type="module" src="/main.js"></script>
-    <title>Weather Web App</title>
+    <title>Weather App</title>
   </head>
   <body>
-    <div class="center">
-      <div class="container">
-        <div class="search">
-          <form id="search-form">
-            <input id="search" type="text" placeholder="ENTER LOCATION">
-            <input type="submit">
-          </form>
-          <div id="location" class="weight-thin gray"></div>
-        </div>
-        <div class="weather-box">
-          <img id="weather-graphic"></img>
-          <p id="weather-description" class="weight-thin gray"></p>
-        </div>
-        <div class="temperature">
-          <h1 id="temp-value">0<sup>&deg;F</sup></h1>
-          <p id="feels-like" class="weight-thin gray"></p>
-        </div>
-        <div class="humidity">
-          <img src="resources/static/droplet-solid.svg" alt="Water Droplet"></img>
-          <p id="humidity">0%</p>
-          <p class="humidity-label">Humidity</p>
-        </div>
-        <div class="wind">
-          <img src="resources/static/wind-solid.svg" alt="Wind Gust"></img>
-          <p id="wind">0 mp/h</p>
-          <p class="wind-label">Wind Speed</p>
-        </div>
-      </div>
-    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
-
