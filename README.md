@@ -1,12 +1,12 @@
 # WeatherApp
-This is a simple weather app written in JavaScript, CSS, and HTML. It allows you to search for the weather conditions of any location around the world.
+This is a simple weather app made in React. It allows you to search for the weather conditions of any location around the world.
 
 # Usage
 To search for the weather conditions of a location, enter the location name in the search bar and press enter or click the search button. The app will display the current temperature, humidity, wind speed, and weather graphic for the location.
 
 # Preview
 <p align="center">
-  <img src="resources\static\preview.png" alt="Weather App Preview">
+  <img src="public\static\preview.png" alt="Weather App Preview">
 </p>
 
 # Credits

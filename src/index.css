@@ -45,15 +45,12 @@
 }
 
 .search input {
-    height: 60%;
-    width: 80%;
     background-color: transparent;
     border: none;
     outline: none;
     color: black;
     font-size: x-large;
     text-align: center;
-    /* box-shadow: rgba(100, 100, 111, 0.05) 0px 7px 29px 0px; */
 }
 
 .search input[type=submit] {
